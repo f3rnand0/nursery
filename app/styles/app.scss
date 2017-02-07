@@ -1,5 +1,13 @@
 @import "footer";
+html,
+body {
+  margin-top: 60px;
+}
 
-html, body {
-  margin: 40px;
+.img-responsive {
+  margin-left: 100px;
+}
+
+#barraMenu {
+  margin-top: 10px;
 }
