@@ -23,6 +23,12 @@ module.exports = function(environment) {
     }
   };
 
+  ENV['g-map'] = {
+    libraries: ['places', 'geometry'],
+    key: 'AIzaSyCqvbAAiBeYjS8X37YH3-dQUO6Yp_Kj8A8',
+    language: 'es'
+  }
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
