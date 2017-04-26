@@ -1,0 +1,26 @@
+//colors
+$color_desert_storm_approx: #474747;
+$color_log_cabin_approx: #222;
+.img-responsive {
+  position: relative;
+  z-index: 2;
+}
+
+.navbar {
+  .navbar-collapse {
+    position: relative;
+  }
+  &.navbar-default {
+    background-color: $color_desert_storm_approx;
+  }
+  &.navbar-inverse {
+    background-color: $color_log_cabin_approx;
+  }
+}
+
+.navbar-nav.navbar-right {
+  position: relative;
+  z-index: 2;
+  padding: 4px 20px;
+  margin: 10px auto;
+}
