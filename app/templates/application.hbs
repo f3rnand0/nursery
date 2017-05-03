@@ -31,10 +31,18 @@
 <footer class="footer-distributed">
   <div class="footer-left">
     <h3>Company<span>logo</span></h3>
-    <p class="footer-links">
-      <a href="#">Inicio</a> -
-      <a href="#">Quienes Somos</a> -
-      <a href="#">Contacto</a>
+    <p>
+      <ul>
+        <li>
+          {{#link-to "index" class="footer-links"}}Inicio{{/link-to}}
+        </li>
+        <li>
+          {{#link-to "quienes-somos" class="footer-links"}}Quienes Somos{{/link-to}}
+        </li>
+        <li>
+          {{#link-to "contacto" class="footer-links"}}Contacto{{/link-to}}
+        </li>
+      </ul>
     </p>
     <p class="footer-company-name">KinderLand &copy; 2017 en adelante</p>
   </div>

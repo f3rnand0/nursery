@@ -1,11 +1,12 @@
 //colors
-$color_mercury_approx: #5c2d91;
-$color_gravel_12_approx: rgba(92, 45, 145, 0.12);
-$color_gravel_approx: #e6e6e6;
-$color_havelock_blue_approx: #5383d3;
-$color_mountain_mist_approx: #8f9296;
-$color_outer_space_approx: #33383b;
-$color_manatee_approx: #92999f;
+$color_background: #941e81;
+$color_footer_shadow: #ffffff;
+$color_links: #ffffff;
+//$color_gravel_approx: #e6e6e6;
+//$color_havelock_blue_approx: #5383d3;
+$color_company_name: #ffffff;
+$color_fa_buttons: #941e81;
+$color_background_fa_buttons: #ffffff;
 
 //fonts
 $font_0: sans-serif;
@@ -13,9 +14,9 @@ $font_1: Cookie;
 $font_2: cursive;
 
 .footer-distributed {
-	background-color: $color_mercury_approx;
+	background-color: $color_background;
 	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-	box-shadow: 0 1px 1px 0 $color_gravel_12_approx;
+	box-shadow: 0 1px 1px 0 $color_footer_shadow;
 	//Instead of the line below you could use @include box-sizing($bs)
 	box-sizing: border-box;
 	width: 100%;
@@ -26,15 +27,15 @@ $font_2: cursive;
 	.footer-left {
 		display: inline-block;
 		vertical-align: top;
-		width: 40%;
+		width: 35%;
 	}
 	.footer-center {
 		display: inline-block;
 		vertical-align: top;
 		width: 35%;
 		i {
-			background-color: $color_outer_space_approx;
-			color: $color_gravel_approx;
+			color: $color_fa_buttons;
+			background-color: $color_background_fa_buttons;
 			font-size: 25px;
 			width: 38px;
 			height: 38px;
@@ -50,65 +51,58 @@ $font_2: cursive;
 			}
 		}
 		p {
+			font-weight: normal;
 			display: inline-block;
-			color: $color_gravel_approx;
+			color: $color_links;
 			vertical-align: middle;
 			margin: 0;
 			span {
 				display: block;
-				font-weight: normal;
-				font-size: 14px;
+				//font-weight: normal;
+				//font-size: 14px;
 				line-height: 2;
 			}
 			a {
-				color: $color_havelock_blue_approx;
+				color: $color_links;
 				text-decoration: none;
 			}
 		}
 	}
 	.footer-right {
 		display: inline-block;
-		vertical-align: top;
-		width: 20%;
+		vertical-align: bottom;
+		margin-left: 50px;
+		margin-bottom: 63px;
+		width: 25%;
 	}
 	h3 {
-		color: $color_gravel_approx;
+		color: $color_links;
 		font: normal 36px $font_1, $font_2;
 		margin: 0;
 		span {
-			color: $color_havelock_blue_approx;
+			color: $color_links;
 		}
 	}
 	.footer-links {
-		color: $color_gravel_approx;
-		margin: 20px 0 12px;
-		padding: 0;
-		a {
+		color: $color_links;
+	  //position: relative;
+  	//z-index: 2;
+  	padding: 4px;
+  	margin: 10px auto;
+		//margin: 20px 0 12px;
+		//padding: 0;
+		//a {
 			display: inline-block;
 			line-height: 1.8;
 			text-decoration: none;
-			color: inherit;
-		}
+			//color: $color_links;
+		//}
 	}
 	.footer-company-name {
-		color: $color_mountain_mist_approx;
+		color: $color_company_name;
 		font-size: 14px;
 		font-weight: normal;
 		margin: 0;
-	}
-	.footer-company-about {
-		line-height: 20px;
-		color: $color_manatee_approx;
-		font-size: 13px;
-		font-weight: normal;
-		margin: 0;
-		span {
-			display: block;
-			color: $color_gravel_approx;
-			font-size: 14px;
-			font-weight: bold;
-			margin-bottom: 20px;
-		}
 	}
 	.footer-icons {
 		margin-top: 25px;
@@ -117,11 +111,11 @@ $font_2: cursive;
 			width: 35px;
 			height: 35px;
 			cursor: pointer;
-			background-color: $color_outer_space_approx;
+			background-color: $color_background_fa_buttons;
 			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
 			border-radius: 2px;
 			font-size: 20px;
-			color: $color_gravel_approx;
+			color: $color_fa_buttons;
 			text-align: center;
 			line-height: 35px;
 			margin-right: 3px;
