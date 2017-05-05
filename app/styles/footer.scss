@@ -7,145 +7,162 @@ $color_links: #ffffff;
 $color_company_name: #ffffff;
 $color_fa_buttons: #941e81;
 $color_background_fa_buttons: #ffffff;
-
 //fonts
 $font_0: sans-serif;
 $font_1: Cookie;
 $font_2: cursive;
-
 .footer-distributed {
-	background-color: $color_background;
-	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-	box-shadow: 0 1px 1px 0 $color_footer_shadow;
-	//Instead of the line below you could use @include box-sizing($bs)
-	box-sizing: border-box;
-	width: 100%;
-	text-align: left;
-	font: bold 16px $font_0;
-	padding: 55px 50px;
-	margin-top: 80px;
-	.footer-left {
-		display: inline-block;
-		vertical-align: top;
-		width: 35%;
-	}
-	.footer-center {
-		display: inline-block;
-		vertical-align: top;
-		width: 35%;
-		i {
-			color: $color_fa_buttons;
-			background-color: $color_background_fa_buttons;
-			font-size: 25px;
-			width: 38px;
-			height: 38px;
-			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-			border-radius: 50%;
-			text-align: center;
-			line-height: 42px;
-			margin: 10px 15px;
-			vertical-align: middle;
-			&.fa-envelope {
-				font-size: 17px;
-				line-height: 38px;
-			}
-		}
-		p {
-			font-weight: normal;
-			display: inline-block;
-			color: $color_links;
-			vertical-align: middle;
-			margin: 0;
-			span {
-				display: block;
-				//font-weight: normal;
-				//font-size: 14px;
-				line-height: 2;
-			}
-			a {
-				color: $color_links;
-				text-decoration: none;
-			}
-		}
-	}
-	.footer-right {
-		display: inline-block;
-		vertical-align: bottom;
-		margin-left: 50px;
-		margin-bottom: 63px;
-		width: 25%;
-	}
-	h3 {
-		color: $color_links;
-		font: normal 36px $font_1, $font_2;
-		margin: 0;
-		span {
-			color: $color_links;
-		}
-	}
-	.footer-links {
-		color: $color_links;
-	  //position: relative;
-  	//z-index: 2;
-  	padding: 4px;
-  	margin: 10px auto;
-		//margin: 20px 0 12px;
-		//padding: 0;
-		//a {
-			display: inline-block;
-			line-height: 1.8;
-			text-decoration: none;
-			//color: $color_links;
-		//}
-	}
-	.footer-company-name {
-		color: $color_company_name;
-		font-size: 14px;
-		font-weight: normal;
-		margin: 0;
-	}
-	.footer-icons {
-		margin-top: 25px;
-		a {
-			display: inline-block;
-			width: 35px;
-			height: 35px;
-			cursor: pointer;
-			background-color: $color_background_fa_buttons;
-			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-			border-radius: 2px;
-			font-size: 20px;
-			color: $color_fa_buttons;
-			text-align: center;
-			line-height: 35px;
-			margin-right: 3px;
-			margin-bottom: 5px;
-		}
-	}
+  background-color: $color_background;
+  //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  box-shadow: 0 1px 1px 0 $color_footer_shadow;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px $font_0;
+  padding: 55px 50px;
+  margin-top: 80px;
+  .footer-left {
+    display: inline-block;
+    vertical-align: top;
+    width: 35%;
+    p {
+      //padding: 0px 0px 20px 20px;
+      margin-bottom: 20px;
+    }
+    ul {
+      //list-style: none;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      //float: left;
+      display: inline;
+      position: relative;
+      //width: auto;
+    }
+    .footer-links {
+      color: $color_links;
+      text-align: center;
+      text-decoration: none;
+      //position: relative;
+      //z-index: 2;
+      //padding: 4px;
+      //margin: 10px auto;
+      //margin: 20px 0 12px;
+      //padding: 0;
+      //a {
+      //display: inline-block;
+      //line-height: 1.8;
+      //text-decoration: none;
+      //color: $color_links;
+      //}
+    }
+  }
+  .footer-center {
+    display: inline-block;
+    vertical-align: top;
+    width: 35%;
+    i {
+      color: $color_fa_buttons;
+      background-color: $color_background_fa_buttons;
+      font-size: 25px;
+      width: 38px;
+      height: 38px;
+      //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+      border-radius: 50%;
+      text-align: center;
+      line-height: 42px;
+      margin: 10px 15px;
+      vertical-align: middle;
+      &.fa-envelope {
+        font-size: 17px;
+        line-height: 38px;
+      }
+    }
+    p {
+      font-weight: normal;
+      display: inline-block;
+      color: $color_links;
+      vertical-align: middle;
+      margin: 0;
+      span {
+        display: block;
+        //font-weight: normal;
+        //font-size: 14px;
+        line-height: 2;
+      }
+      a {
+        color: $color_links;
+        text-decoration: none;
+      }
+    }
+  }
+  .footer-right {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 50px;
+    margin-bottom: 63px;
+    width: 25%;
+  }
+  h3 {
+    color: $color_links;
+    font: normal 36px $font_1, $font_2;
+    margin: 0;
+    span {
+      color: $color_links;
+    }
+  }
+  .footer-company-name {
+    color: $color_company_name;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+  }
+  .footer-icons {
+    margin-top: 25px;
+    a {
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+      background-color: $color_background_fa_buttons;
+      //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+      border-radius: 2px;
+      font-size: 20px;
+      color: $color_fa_buttons;
+      text-align: center;
+      line-height: 35px;
+      margin-right: 3px;
+      margin-bottom: 5px;
+    }
+  }
 }
+
 @media(max-width: 880px) {
-	.footer-distributed {
-		font: bold 14px $font_0;
-		.footer-left {
-			display: block;
-			width: 100%;
-			margin-bottom: 40px;
-			text-align: center;
-		}
-		.footer-center {
-			display: block;
-			width: 100%;
-			margin-bottom: 40px;
-			text-align: center;
-			i {
-				margin-left: 0;
-			}
-		}
-		.footer-right {
-			display: block;
-			width: 100%;
-			margin-bottom: 40px;
-			text-align: center;
-		}
-	}
+  .footer-distributed {
+    font: bold 14px $font_0;
+    .footer-left {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .footer-center {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+      i {
+        margin-left: 0;
+      }
+    }
+    .footer-right {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+  }
 }
