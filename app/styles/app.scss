@@ -1,6 +1,20 @@
 @import "navbar";
 @import "footer";
 
+@font-face {
+  font-family: 'kginimitableoriginal';
+  src: url('/assets/fonts/KGInimitableOriginal.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'brandon_light';
+  src: url('/assets/fonts/Brandon_light.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*html,
 body {
   margin-top: 60px;
@@ -9,6 +23,7 @@ body {
 .img-responsive {
   margin-left: 100px;
 }
+
 
 /*#barraMenu {
   margin-top: 10px;

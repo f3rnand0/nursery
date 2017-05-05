@@ -7,10 +7,7 @@ $color_links: #ffffff;
 $color_company_name: #ffffff;
 $color_fa_buttons: #941e81;
 $color_background_fa_buttons: #ffffff;
-//fonts
-$font_0: sans-serif;
-$font_1: Cookie;
-$font_2: cursive;
+
 .footer-distributed {
   background-color: $color_background;
   //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
@@ -19,7 +16,8 @@ $font_2: cursive;
   box-sizing: border-box;
   width: 100%;
   text-align: left;
-  font: bold 16px $font_0;
+  font-family: 'brandon_light';
+  font-weight: bold;
   padding: 55px 50px;
   margin-top: 80px;
   .footer-left {
@@ -44,6 +42,7 @@ $font_2: cursive;
     }
     .footer-links {
       color: $color_links;
+      margin-right: 20px;
       text-align: center;
       text-decoration: none;
       //position: relative;
@@ -58,6 +57,12 @@ $font_2: cursive;
       //text-decoration: none;
       //color: $color_links;
       //}
+    }
+    .footer-company-name {
+      color: $color_company_name;
+      font-size: 14px;
+      font-family: brandon_light;
+      margin: 0;
     }
   }
   .footer-center {
@@ -108,17 +113,11 @@ $font_2: cursive;
   }
   h3 {
     color: $color_links;
-    font: normal 36px $font_1, $font_2;
+    font: normal 36px;
     margin: 0;
     span {
       color: $color_links;
     }
-  }
-  .footer-company-name {
-    color: $color_company_name;
-    font-size: 14px;
-    font-weight: normal;
-    margin: 0;
   }
   .footer-icons {
     margin-top: 25px;
@@ -142,7 +141,7 @@ $font_2: cursive;
 
 @media(max-width: 880px) {
   .footer-distributed {
-    font: bold 14px $font_0;
+    font: bold 14px;
     .footer-left {
       display: block;
       width: 100%;
