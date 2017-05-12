@@ -2,16 +2,30 @@
 @import "footer";
 
 @font-face {
-  font-family: 'kginimitableoriginal';
+  font-family: 'kginimitable';
   src: url('/assets/fonts/KGInimitableOriginal.woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
+  font-family: 'kginimitable_bolder';
+  src: url('/assets/fonts/KGInimitableOriginal.woff');
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'brandon_light';
   src: url('/assets/fonts/Brandon_light.woff');
-  font-weight: normal;
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'brandon_bold';
+  src: url('/assets/fonts/Brandon_bld.woff');
+  font-weight: bold;
   font-style: normal;
 }
 

@@ -2,12 +2,9 @@
 $color_background: #941e81;
 $color_footer_shadow: #ffffff;
 $color_links: #ffffff;
-//$color_gravel_approx: #e6e6e6;
-//$color_havelock_blue_approx: #5383d3;
 $color_company_name: #ffffff;
 $color_fa_buttons: #941e81;
 $color_background_fa_buttons: #ffffff;
-
 .footer-distributed {
   background-color: $color_background;
   //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
@@ -18,8 +15,8 @@ $color_background_fa_buttons: #ffffff;
   text-align: left;
   font-family: 'brandon_light';
   font-weight: bold;
-  padding: 55px 50px;
-  margin-top: 80px;
+  padding: 35px 35px;
+  margin-top: 60px;
   .footer-left {
     display: inline-block;
     vertical-align: top;
@@ -40,7 +37,12 @@ $color_background_fa_buttons: #ffffff;
       position: relative;
       //width: auto;
     }
+    .footer-logo {
+      width: 25%;
+      height: 25%;
+    }
     .footer-links {
+      font-family: 'brandon_bold';
       color: $color_links;
       margin-right: 20px;
       text-align: center;
@@ -60,9 +62,8 @@ $color_background_fa_buttons: #ffffff;
     }
     .footer-company-name {
       color: $color_company_name;
-      font-size: 14px;
+      font-size: 12px;
       font-family: brandon_light;
-      margin: 0;
     }
   }
   .footer-center {
@@ -103,40 +104,43 @@ $color_background_fa_buttons: #ffffff;
         text-decoration: none;
       }
     }
+    .footer-info {
+      margin-bottom: 20px;
+    }
   }
   .footer-right {
     display: inline-block;
-    vertical-align: bottom;
-    margin-left: 50px;
-    margin-bottom: 63px;
+    vertical-align: top;
+    //margin-left: 50px;
     width: 25%;
+    .footer-social {
+    	margin-top: 90px;
+      a {
+        margin-right: 20px;
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        background-color: $color_background_fa_buttons;
+        //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+        border-radius: 2px;
+        font-size: 20px;
+        color: $color_fa_buttons;
+        text-align: center;
+        line-height: 35px;
+        margin-right: 10px;
+        margin-bottom: 5px;
+      }
+    }
   }
-  h3 {
+  /*h3 {
     color: $color_links;
     font: normal 36px;
     margin: 0;
     span {
       color: $color_links;
     }
-  }
-  .footer-icons {
-    margin-top: 25px;
-    a {
-      display: inline-block;
-      width: 35px;
-      height: 35px;
-      cursor: pointer;
-      background-color: $color_background_fa_buttons;
-      //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-      border-radius: 2px;
-      font-size: 20px;
-      color: $color_fa_buttons;
-      text-align: center;
-      line-height: 35px;
-      margin-right: 3px;
-      margin-bottom: 5px;
-    }
-  }
+  }*/
 }
 
 @media(max-width: 880px) {

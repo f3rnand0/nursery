@@ -7,7 +7,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      {{#link-to "index"}}<img class="img-responsive" src="/assets/images/logo_100.png">{{/link-to}}
+      <!-- {{#link-to "index"}}<img class="img-responsive" src="/assets/images/logo-transparente.png">{{/link-to}} -->
+      {{#link-to "index"}}
+        <div class="header-titulo">
+          <p class="header-nombre">KINDERLAND</p>
+          <p class="header-tipo">CENTRO DE DESARROLLO INFANTIL</p>
+        </div>
+      {{/link-to}}
     </div>
     <div id="barraMenu" class="collapse navbar-collapse">
       <!-- <ul class="nav nav-justified"> -->
@@ -31,39 +37,40 @@
 <footer class="footer-distributed">
   <div class="footer-left">
     <p>
-      <h3>Company<span>logo</span></h3>
+      <img class="footer-logo" src="/assets/images/logo-transparente.png">
     </p>
+    <p class="footer-company-name">KinderLand &copy; 2017 en adelante</p>
     <p>
       <ul>
         <li>
-          {{#link-to "index" class="footer-links" }}Inicio{{/link-to}}
+          {{#link-to "index" class="footer-links" }}INICIO{{/link-to}}
         </li>
         <li>
-          {{#link-to "quienes-somos" class="footer-links" }}Quienes Somos{{/link-to}}
+          {{#link-to "quienes-somos" class="footer-links" }}QUIENES SOMOS{{/link-to}}
         </li>
         <li>
-          {{#link-to "contacto" class="footer-links" }}Contacto{{/link-to}}
+          {{#link-to "contacto" class="footer-links" }}CONTACTO{{/link-to}}
         </li>
       </ul>
     </p>
-    <p class="footer-company-name">KinderLand &copy; 2017 en adelante</p>
+    <p class="footer-company-name">Quito - Ecuador</p>
   </div>
   <div class="footer-center">
-    <div>
+    <div class="footer-info">
       <i class="fa fa-map-marker"></i>
       <p><span>Avenida Miguel Angel 123 y Calle de los Jazmines</span>Urbanizacion La Primavera 2, Quito</p>
     </div>
-    <div>
+    <div class="footer-info">
       <i class="fa fa-phone"></i>
       <p>02 2052 733</p>
     </div>
-    <div>
+    <div class="footer-info">
       <i class="fa fa-envelope"></i>
       <p><a href="mailto:support@company.com">cdikinderland@gmail.com</a></p>
     </div>
   </div>
   <div class="footer-right">
-    <div class="footer-icons">
+    <div class="footer-social">
       <a href="#"><i class="fa fa-facebook"></i></a>
       <a href="#"><i class="fa fa-instagram"></i></a>
     </div>
