@@ -4,6 +4,7 @@ $color_inverse: #000000;
 $color_nombre: #ffffff;
 $color_borde_nombre: #941e81;
 $color_tipo: #06a69c;
+$color_links: #941e81;
 .img-responsive {
   position: relative;
   z-index: 2;
@@ -27,7 +28,7 @@ $color_tipo: #06a69c;
     font-size: 30px;
     color: $color_nombre;
     //text-shadow: 4px 0 $color_borde_nombre, 0 4px $color_borde_nombre, 4px 0 $color_borde_nombre, 0 -4px $color_borde_nombre;
-    text-shadow: -5px 0px 3px $color_borde_nombre, 0px 5px 3px $color_borde_nombre, 5px 0px 3px $color_borde_nombre ,0px -5px 3px $color_borde_nombre;
+    text-shadow: -5px 0px 3px $color_borde_nombre, 0px 5px 3px $color_borde_nombre, 5px 0px 3px $color_borde_nombre, 0px -5px 3px $color_borde_nombre;
   }
   .header-tipo {
     font-family: 'kginimitable';
@@ -40,4 +41,8 @@ $color_tipo: #06a69c;
   z-index: 2;
   padding: 4px 20px;
   margin: 10px auto;
+  .header-links {
+    font-family: 'brandon_bold';
+    color: $color_links;
+  }
 }
