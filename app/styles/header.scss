@@ -5,6 +5,7 @@ $color_nombre: #ffffff;
 $color_borde_nombre: #941e81;
 $color_tipo: #06a69c;
 $color_links: #941e81;
+$color_active_link: #06a69c;
 .img-responsive {
   position: relative;
   z-index: 2;
@@ -23,7 +24,9 @@ $color_links: #941e81;
 }
 
 .header-titulo {
-  .header-nombre {
+  margin: 5px 5px;
+  //padding: 20px;
+  /*.header-nombre {
     font-family: 'kginimitable_bolder';
     font-size: 30px;
     color: $color_nombre;
@@ -33,7 +36,7 @@ $color_links: #941e81;
   .header-tipo {
     font-family: 'kginimitable';
     color: $color_tipo;
-  }
+  }*/
 }
 
 .navbar-nav.navbar-right {
@@ -45,4 +48,13 @@ $color_links: #941e81;
     font-family: 'brandon_bold';
     color: $color_links;
   }
+  .active {
+    color: $color_active_link;
+  }
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  background-color: transparent;
+  color: $color_active_link;
 }

@@ -1,16 +1,34 @@
-<div class="jumbo">
-  <div class="container-fluid"></div>
-  <h2>Bienvenido!</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut turpis odio. Suspendisse et nisl rutrum, pharetra nulla a, aliquam massa. Suspendisse tincidunt ex eu nunc porttitor blandit. Duis aliquet, dolor eget pretium blandit, massa metus efficitur dolor, sit amet pulvinar dolor velit eu turpis. Nullam eget justo quam. Quisque molestie dolor et erat convallis fringilla. Nunc ut mattis leo, nec rutrum nunc. Duis blandit felis justo, quis cursus odio vehicula nec. Pellentesque bibendum, odio vitae finibus dictum, diam odio sagittis turpis, non lacinia est est id tellus.</p>
-  <br/>
-  <p>Curabitur nec suscipit lorem. Aliquam vel odio sed augue aliquam mollis. Vivamus felis massa, accumsan sit amet fringilla id, pellentesque sit amet neque. Aliquam at ipsum quis sem tempus rutrum ut at magna. Integer sed metus facilisis dolor varius tincidunt. Donec sed fermentum magna. Vestibulum placerat euismod risus eget consectetur. Cras vitae accumsan tortor, eu consequat lorem. Proin vestibulum maximus metus, sed ultricies lacus blandit quis. Cras eget orci at velit pulvinar iaculis eu eget sem.</p>
-  <br/>
-  <p>Cras odio odio, dignissim sed dui sit amet, mollis semper tellus. In feugiat mauris hendrerit, dignissim metus vitae, vehicula lacus. Nullam semper et mi a pretium. Nulla eget ligula nec nibh pulvinar efficitur quis eu nunc. Phasellus quis iaculis velit, eu commodo orci. Aenean pharetra venenatis convallis. Donec maximus laoreet urna, at commodo risus vestibulum ut. Sed non rhoncus nibh, ac imperdiet magna. Nunc ut convallis ipsum, nec porta neque. Cras tristique lectus est, nec ultrices nisi sagittis sit amet. Integer varius ac nibh at elementum.</p>
-  <br/>
-  <p>Nunc turpis metus, vulputate non aliquet eu, ultricies ut lacus. Curabitur sagittis sed leo quis suscipit. Nam eget volutpat turpis. Nullam cursus eros sit amet turpis condimentum, sit amet vestibulum turpis varius. Donec id mollis mi. Ut a velit euismod, dignissim diam eget, gravida velit. Pellentesque sit amet quam gravida, ultricies ligula eu, sodales turpis.</p>
-  <br/>
-  <p>Proin diam lacus, elementum et euismod a, consequat a felis. Morbi eget tempor leo. Aenean lobortis odio est, quis viverra felis cursus in. Nunc congue risus nisl, eu luctus lorem molestie et. Praesent fermentum finibus libero, a convallis sapien malesuada vel. Quisque vel congue massa. Sed ultricies metus ac nisl pulvinar lobortis. Duis elementum nisl vitae neque varius commodo. Duis hendrerit, eros non interdum imperdiet, turpis mauris volutpat sapien, sit amet dapibus ipsum sapien id velit.</p>
-  <br/>
+<div class='row'>
+  <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+    <!-- Overlay -->
+    <div class="overlay"></div>
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#bs-carousel" data-slide-to="1"></li>
+      <li data-target="#bs-carousel" data-slide-to="2"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item slides active">
+        <img src="/assets/images/slide1.png">
+      </div>
+      <div class="item slides">
+        <img src="/assets/images/slide2.png">
+      </div>
+      <div class="item slides">
+        <img src="/assets/images/slide3.png">
+      </div>
+      <div class="item slides">
+        <img src="/assets/images/slide4.png">
+      </div>
+      <div class="item slides">
+        <img src="/assets/images/slide5.png">
+      </div>
+    </div>
+  </div>
+</div>
+<div class='row'>
   <div id="divMapa">
     {{#g-map lat=-0.2143177 lng=-78.4325439 options=customOptions zoom=16 as |context|}}
       {{#g-map-marker context lat=-0.2130085 lng=-78.4316426 as |markerContext|}}

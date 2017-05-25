@@ -1,6 +1,5 @@
-@import "navbar";
+@import "header";
 @import "footer";
-
 @font-face {
   font-family: 'kginimitable';
   src: url('/assets/fonts/KGInimitableOriginal.woff');
@@ -29,19 +28,9 @@
   font-style: normal;
 }
 
-/*html,
-body {
-  margin-top: 60px;
-}*/
-
 .img-responsive {
   margin-left: 100px;
 }
-
-
-/*#barraMenu {
-  margin-top: 10px;
-}*/
 
 #divMapa {
   width: 100%;

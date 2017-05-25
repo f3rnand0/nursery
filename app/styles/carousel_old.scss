@@ -1,0 +1,92 @@
+//colors
+$color_tree_poppy_approx: #f39c12;
+$white: #fff;
+$black_75: rgba(0, 0, 0, .75);
+$color_bunker_approx: #080d15;
+$color_wild_sand_approx: #f5f5f5;
+$color_mountain_meadow_approx: #1abc9c;
+//urls
+$url_slide1: url('/assets/images/slide1.png');
+$url_slide2: url('/assets/images/slide2.png');
+$url_slide3: url('/assets/images/slide3.png');
+$url_slide4: url('/assets/images/slide4.png');
+$url_slide5: url('/assets/images/slide5.png');
+//@extend-elements
+//original selectors
+//.btn.btn-hero, .btn.btn-hero:hover, .btn.btn-hero:focus
+%extend_1 {
+  color: $color_wild_sand_approx;
+  background-color: $color_mountain_meadow_approx;
+  border-color: $color_mountain_meadow_approx;
+  outline: none;
+  margin: 20px auto;
+}
+
+//original selectors
+//.fade-carousel .slides .slide-1, .fade-carousel .slides .slide-2, .fade-carousel .slides .slide-3
+%extend_2 {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.fade-carousel {
+  position: relative;
+  height: 100vh;
+  .slides {
+    .slide-1 {
+      @extend %extend_2;
+      background-image: $url_slide1;
+    }
+    .slide-2 {
+      @extend %extend_2;
+      background-image: $url_slide2;
+    }
+    .slide-3 {
+      @extend %extend_2;
+      background-image: $url_slide3;
+    }
+    .slide-4 {
+      @extend %extend_2;
+      background-image: $url_slide4;
+    }
+    .slide-5 {
+      @extend %extend_2;
+      background-image: $url_slide5;
+    }
+  }
+  .carousel-inner .item {
+    height: 100vh;
+    .hero {
+      opacity: 0;
+      //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+      transition: 2s all ease-in-out .1s;
+    }
+    &.active .hero {
+      opacity: 1;
+      //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+      transition: 2s all ease-in-out .1s;
+    }
+  }
+  .carousel-indicators > li {
+    margin: 0 2px;
+    background-color: $color_tree_poppy_approx;
+    border-color: $color_tree_poppy_approx;
+    opacity: .7;
+    &.active {
+      width: 10px;
+      height: 10px;
+      opacity: 1;
+    }
+  }
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: $color_bunker_approx;
+  opacity: .7;
+}
