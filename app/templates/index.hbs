@@ -1,41 +1,58 @@
-<div class='row'>
-  <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
-    <!-- Overlay -->
-    <div class="overlay"></div>
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
-      <li data-target="#bs-carousel" data-slide-to="1"></li>
-      <li data-target="#bs-carousel" data-slide-to="2"></li>
-    </ol>
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item slides active">
-        <img src="/assets/images/slide1.png">
-      </div>
-      <div class="item slides">
-        <img src="/assets/images/slide2.png">
-      </div>
-      <div class="item slides">
-        <img src="/assets/images/slide3.png">
-      </div>
-      <div class="item slides">
-        <img src="/assets/images/slide4.png">
-      </div>
-      <div class="item slides">
-        <img src="/assets/images/slide5.png">
+<div class="container-fluid">
+  <div class="row">
+    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#bs-carousel" data-slide-to="1"></li>
+        <li data-target="#bs-carousel" data-slide-to="2"></li>
+        <li data-target="#bs-carousel" data-slide-to="3"></li>
+        <li data-target="#bs-carousel" data-slide-to="4"></li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <!-- <div class="item slides active">
+          <img src="/assets/images/slide1_full.png">
+        </div>
+        <div class="item slides">
+          <img src="/assets/images/slide2_full.png">
+        </div>
+        <div class="item slides">
+          <img src="/assets/images/slide3_full.png">
+        </div>
+        <div class="item slides">
+          <img src="/assets/images/slide4_full.png">
+        </div>
+        <div class="item slides">
+          <img src="/assets/images/slide5_full.png">
+        </div> -->
+        <div class="item slides active">
+          <div class="slide-1"></div>
+        </div>
+        <div class="item slides">
+          <div class="slide-2"></div>
+        </div>
+        <div class="item slides">
+          <div class="slide-3"></div>
+        </div>
+        <div class="item slides">
+          <div class="slide-4"></div>
+        </div>
+        <div class="item slides">
+          <div class="slide-5"></div>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<div class='row'>
-  <div id="divMapa">
-    {{#g-map lat=-0.2143177 lng=-78.4325439 options=customOptions zoom=16 as |context|}}
-      {{#g-map-marker context lat=-0.2130085 lng=-78.4316426 as |markerContext|}}
-        {{#g-map-infowindow markerContext openOn="click" closeOn="click" title="KinderLand" }}
-          <h3>KinderLand</h3>
-        {{/g-map-infowindow}}
-      {{/g-map-marker}}
-    {{/g-map}}
+  <div class='row'>
+    <div id="divMapa">
+      {{#g-map lat=-0.2143177 lng=-78.4325439 options=customOptions zoom=16 as |context|}}
+        {{#g-map-marker context lat=-0.2130085 lng=-78.4316426 as |markerContext|}}
+          {{#g-map-infowindow markerContext openOn="click" closeOn="click" title="KinderLand" }}
+            <h3>KinderLand</h3>
+          {{/g-map-infowindow}}
+        {{/g-map-marker}}
+      {{/g-map}}
+    </div>
   </div>
 </div>

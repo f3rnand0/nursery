@@ -1,26 +1,25 @@
 //colors
 $color_normal: #ffffff;
 $color_inverse: #000000;
-$color_nombre: #ffffff;
-$color_borde_nombre: #941e81;
-$color_tipo: #06a69c;
+//$color_borde_nombre: #941e81;
+//$color_tipo: #06a69c;
 $color_links: #941e81;
 $color_active_link: #06a69c;
-.img-responsive {
-  position: relative;
-  z-index: 2;
-}
-
 .navbar {
-  .navbar-collapse {
-    position: relative;
-  }
-  &.navbar-default {
-    background-color: $color_normal;
-  }
-  &.navbar-inverse {
-    background-color: $color_inverse;
-  }
+  background-color: $color_normal;
+  color: $color_normal;
+  background-image: none;
+  /*.navbar-default {
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    .navbar-collapse {
+      position: relative;
+      border: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+  }*/
 }
 
 .header-titulo {
