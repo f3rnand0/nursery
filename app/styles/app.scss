@@ -1,7 +1,6 @@
 @import "header";
 @import "carousel";
 @import "footer";
-
 @font-face {
   font-family: 'kginimitable';
   src: url('/assets/fonts/KGInimitableOriginal.woff');
@@ -50,4 +49,21 @@
 
 .form-area {
   background-color: #ffffff;
+}
+
+.threeColumnPrinciples {
+  padding: 60px 60px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  .principleTitle {
+    padding: 20px 20px;
+    font-family: 'brandon_light';
+    font-size: x-large;
+    span {
+      margin-left: 10px;
+    }
+  }
+  .principleContent {
+    font-size: medium;
+  }
 }

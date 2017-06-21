@@ -1,5 +1,5 @@
 //colors
-$color_indicator: #941e81;
+$color_indicator: #06a69c;
 //urls
 $url_slide1: url('/assets/images/slide1.png');
 $url_slide2: url('/assets/images/slide2.png');
@@ -56,11 +56,15 @@ $url_slide5: url('/assets/images/slide5.png');
     margin: 0 2px;
     background-color: $color_indicator;
     border-color: $color_indicator;
-    opacity: .7;
+    opacity: 0.5;
     &.active {
       width: 10px;
       height: 10px;
       opacity: 1;
     }
   }
+  /*.carousel-logo {
+    position: absolute;
+    top: 10px;
+  }*/
 }
