@@ -1,12 +1,16 @@
 {{outlet}}
 <div class="container">
   <div class="form-area">
-    <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbxYjklCoTsUEMDegOO6U2zwJubaVZlrDg-JivTGz0jusXsxaM3F/exec">
+    <form id="gform" {{action "sendEmail" on="submit"}}>
+      {{#if mailProcessFailed}}
+        <div class="col-md-6 col-md-offset-3 mailSentMessage">Existieron problemas al enviar su correo.</div>
+      {{/if}}
       <div class="col-md-6">
         <div class="form-group">
           <label for="name">
             Nombres y Apellidos</label>
-          <input type="text" class="form-control" id="name" name="name" placeholder="" required="required" />
+          {{input value=name type="text" name="name" placeholder="" class="form-control" required="required"}}
+          <!--<input type="text" class="form-control" id="name" name="name" placeholder="" required="required" />-->
         </div>
         <div class="form-group">
           <label for="email">
@@ -14,13 +18,15 @@
           <div class="input-group">
             <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
             </span>
-            <input type="email" class="form-control" id="email" name="email" placeholder="" required="required" />
+            {{input value=email type="text" name="email" placeholder="" class="form-control" required="required"}}
+            <!--input type="email" class="form-control" id="email" name="email" placeholder="" required="required" /-->
           </div>
         </div>
         <div class="form-group">
           <label for="subject">
             Asunto</label>
-          <input type="text" class="form-control" id="subject" name="subject" placeholder="" required="required" />
+          {{input value=subject type="text" name="subject" placeholder="" class="form-control" required="required"}}
+          <!--input type="text" class="form-control" id="subject" name="subject" placeholder="" required="required" /-->
           <!-- <select id="subject" name="subject" class="form-control" required="required">
                                 <option value="na" selected="">Choose One:</option>
                                 <option value="service">General Customer Service</option>
@@ -33,19 +39,16 @@
         <div class="form-group">
           <label for="name">
             Mensaje</label>
-          <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required" placeholder=""></textarea>
+          {{textarea value=message name="message" placeholder="" class="form-control" rows="9" cols="25" required="required"}}
+          <!--textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required" placeholder=""></textarea-->
         </div>
       </div>
       <div class="col-md-12">
-        <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+        <button type="submit" class="btn btn-primary pull-right btnSendMail" id="btnContactUs" disabled= {{isProcessing}}>
           Enviar Mensaje</button>
       </div>
     </form>
-    <!-- Cuando se envia el mensaje -->
-    <div style="display:none;" id="thankyou_message">
-      <h2><em>Gracias</em> por contactarnos
-      Pronto le ayudaremos!</h2>
-    </div>
   </div>
 </div>
-<script type="text/javascript" src="{{rootURL}}assets/scripts/form-submission-handler.js"></script>
+<!--<script type="text/javascript" src="{{rootURL}}assets/scripts/form-submission-handler.js"></script>-->
+<script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>

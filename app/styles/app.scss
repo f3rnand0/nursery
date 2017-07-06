@@ -67,3 +67,20 @@
     font-size: medium;
   }
 }
+
+.mailSentMessage {
+  padding: 20px 20px;
+  font-family: 'brandon_bold';
+  font-size: x-large;
+  color: #941e81;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+  background-image: none;
+  background-color: #06a69c;
+  border-color: #06a69c;
+}
