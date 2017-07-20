@@ -55,9 +55,9 @@
   padding: 60px 60px;
   margin-top: 60px;
   margin-bottom: 60px;
+  font-family: 'brandon_light';
   .principleTitle {
     padding: 20px 20px;
-    font-family: 'brandon_light';
     font-size: x-large;
     span {
       margin-left: 10px;
@@ -68,6 +68,20 @@
   }
 }
 
+// QUIENES SOMOS
+.history {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 200px;
+  margin-right: 200px;
+  font-family: 'brandon_light';
+  font-size: large;
+}
+
+.philosophyImage {}
+
+
+// CONTACTO
 .mailSentMessage {
   padding: 20px 20px;
   font-family: 'brandon_bold';
