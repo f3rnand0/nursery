@@ -29,6 +29,8 @@
   font-style: normal;
 }
 
+$color_philosophy_title: #06a69c;
+
 .img-responsive {
   margin-left: 100px;
 }
@@ -69,17 +71,29 @@
 }
 
 // QUIENES SOMOS
-.history {
+.aboutText {
   margin-top: 40px;
   margin-bottom: 40px;
   margin-left: 200px;
   margin-right: 200px;
   font-family: 'brandon_light';
   font-size: large;
+  .aboutTitle {
+    padding-bottom: 5px;
+    font-family: 'brandon_light';
+    font-weight: bold;
+    font-size: x-large;
+    color: $color_philosophy_title;
+  }
 }
 
-.philosophyImage {}
-
+.philosophyImage {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  position: relative;
+  width: 1366px;
+  height: auto;
+}
 
 // CONTACTO
 .mailSentMessage {
