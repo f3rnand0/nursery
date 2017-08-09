@@ -1,3 +1,4 @@
+@import "responsive_margins";
 @import "header";
 @import "carousel";
 @import "footer";
@@ -38,11 +39,8 @@
 
 $color_philosophy_title: #06a69c;
 
-.img-responsive {
-  margin-left: 100px;
-}
-
 #divMapa {
+  //display: block;
   width: 100%;
   height: 350px;
 }
@@ -61,15 +59,15 @@ $color_philosophy_title: #06a69c;
 }
 
 .threeColumnPrinciples {
-  padding: 60px 60px;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  padding: 7% 7%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   .principleTitle {
     font-family: 'brandon_regular';
-    padding: 20px 20px;
+    padding: 5% 5%;
     font-size: x-large;
     span {
-      margin-left: 10px;
+      margin-left: 1%;
     }
   }
   .principleContent {
@@ -80,14 +78,14 @@ $color_philosophy_title: #06a69c;
 
 // QUIENES SOMOS
 .aboutText {
-  margin-top: 60px;
-  margin-bottom: 40px;
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-top: 10%;
+  margin-bottom: 7%;
+  margin-left: 20%;
+  margin-right: 20%;
   font-family: 'brandon_light';
   font-size: large;
   .aboutTitle {
-    padding-bottom: 5px;
+    padding-bottom: 1%;
     font-family: 'brandon_light';
     font-weight: bold;
     font-size: x-large;
@@ -96,11 +94,11 @@ $color_philosophy_title: #06a69c;
 }
 
 .philosophyImage {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  position: relative;
-  width: 1366px;
-  height: auto;
+  margin-top: 7%;
+  margin-bottom: 7%;
+  //position: relative;
+  //width: 1366px;
+  //height: auto;
 }
 
 // CONTACTO

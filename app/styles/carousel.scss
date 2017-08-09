@@ -11,19 +11,31 @@ $url_slide5: url('/assets/images/slide5.png');
 //.btn.btn-hero, .btn.btn-hero:hover, .btn.btn-hero:focus
 //original selectors
 //.fade-carousel .slides .slide-1, .fade-carousel .slides .slide-2, .fade-carousel .slides .slide-3
-%extend_1 {
+
+/*%extend_1 {
   height: 100vh;
-  background-size: 1366px 500px;
+  background-size: 1366px 590px;
   background-position: left top;
   background-repeat: no-repeat;
+}*/
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .fade-carousel {
-  position: relative;
-  width: 1366px;
-  height: 500px;
+  margin: -1.5%;
+  //position: relative;
+  //width: 1366px;
+  //height: 500px;
   .slides {
-    .slide-1 {
+    /*.slide-1 {
       @extend %extend_1;
       background-image: $url_slide1;
     }
@@ -42,7 +54,7 @@ $url_slide5: url('/assets/images/slide5.png');
     .slide-5 {
       @extend %extend_1;
       background-image: $url_slide5;
-    }
+    }*/
   }
   .carousel-inner .item {
     //height: 100vh;
@@ -63,8 +75,4 @@ $url_slide5: url('/assets/images/slide5.png');
       opacity: 1;
     }
   }
-  /*.carousel-logo {
-    position: absolute;
-    top: 10px;
-  }*/
 }
