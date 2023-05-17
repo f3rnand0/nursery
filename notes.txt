@@ -1,0 +1,9 @@
+** NOTES **
+- TODO:
+  * Create navigation bar
+- References:
+https://betterprogramming.pub/how-to-implement-a-single-page-application-using-react-router-cc6b9e5c3aec
+https://levelup.gitconnected.com/how-to-setup-a-react-spa-with-typescript-redux-and-material-ui-99a1e1ec7d54
+https://levelup.gitconnected.com/react-functional-components-managing-state-with-redux-and-hooks-a372b1a77514
+https://github.com/mariofonteles/react-redux-functional-components/blob/master/src/App.tsx
+https://github.com/mariofonteles/react-redux-typescript-boilerplate/tree/master/src/components
